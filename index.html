@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="funciones.js"></script>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="/css/estilos1.css" />
+
+    <title>Curriculum Vitae</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#cont1">Datos Personales</a>
+          </li>
+          <li><a href="#cont2">Experiencia Laboral</a></li>
+          <li><a href="#cont3">Formacion Academica</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <button id="botonOscuro" onclick="myFunction()">&#9789;</button>
+        </ul>
+      </nav>
+      <main>
+        <h1>Sobre mi</h1>
+        <figure>
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            alt="Chester"
+          />
+        </figure>
+        <p>
+          Graduado en Ingenieria en Sistemas, he dedicado toda mi trayectoria
+          profesional en ampliar exponencialmente el potencial de las empresas y
+          gestionar la ciberseguridad de las mismas. Tengo formación
+          complementaria en INGENIERIA SOCIAL. Titulado en Executive Coaching
+          Certification (ICM_MCC) y Liderazgo y construcción de equipo de
+          trabajo Mi experiencia profesional está enfocada en la ciberseguridad.
+          Me he dedicado los últimos 10 años al desarrollo de sistemas para
+          potenciar la seguridad y confiabilidad de las empresas.
+        </p>
+      </main>
+      <!--Todos los datos proporcionados seran ficticios-->
+      <section class="side">
+        <div>
+          <h2>Contacto</h2>
+          <ul>
+            <li>&#8227;E-Mail: chesterpeters@mail.com</li>
+            <li>&#8227;Linkedin: linkedin.com/in/chesterpeters</li>
+            <li>&#8227;Github: github.com/chesterpeters</li>
+            <li>&#8227;Twitter: twitter.com/chesterpeters</li>
+            <li>&#8227;Facebook: fb.com/chesterpeters</li>
+          </ul>
+        </div>
+        <hr>
+        <p>MEJORES HABILIDADES </p>
+        <p>HTML</p>
+        <div class="barra">
+          <div class="barra-porc-html">90%</div>
+        </div>
+        <p>PHP</p>
+        <div class="barra">
+          <div class="barra-porc-php">80%</div>
+        </div>
+        <p>MySQL</p>
+        <div class="barra">
+          <div class="barra-porc-mysql">100%</div>
+        </div>
+        <form onsubmit="return alert('Muchas gracias por ponerte en contacto conmigo, en breve estaremos hablando.');" id="contacto" method="GET" class="formulario">
+          <hr>
+          <p>
+            Si deseas comunicarte conmigo, completa el siguiente formulario:
+          </p>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <label for="correo">Correo:</label>
+          <input type="text" id="correo" name="correo" required />
+          <button type="submit">Enviar</button>
+        </form>
+
+      </section>
+      <section id="cont1" class="cont-1">
+        <h2>DATOS PERSONALES</h2>
+        <div>
+          <ul>
+            <li>&#8227;Nombre: Chester.</li>
+            <li>&#8227;Apellido: Peters.</li>
+            <li>&#8227;Edad: 43 años.</li>
+            <li>&#8227;Nacionalidad: Canadiense.</li>
+            <li>
+              &#8227;Fecha y lugar de nacimiento: 4 de Abril de 1979 en Canada,
+              Yukon, Lloydminster.
+            </li>
+          </ul>
+          <h3>RESIDENCIA</h3>
+          <div>
+            <ul>
+              <li>&#8227;Dirección: Mapple Ave 6832, Lloydminster.</li>
+              <li>&#8227;Código Postal: D9M 5F3.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="cont2" class="cont-2">
+        <h2>EXPERIENCIA LABORAL</h2>
+        <ul>
+          <li>&#8227;(2002-2009) Onapsis</li>
+          <li>&#8227;(2010-2016) Core Security</li>
+          <li>&#8227;(2016-2022) Grupo Datco</li>
+        </ul>
+        <h3>HABILIDADES</h3>
+        <ul>
+          <li>&#8227;Capto la necesidad y exceptivas de las personas.</li>
+          <li>&#8227;Analizo situaciones y defino planes de acción.</li>
+          <li>&#8227;Motivo e incentivo a las personas hacia la acción.</li>
+          <li>&#8227;Asumo nuevos retos y proyectos de gran complejidad.</li>
+        </ul>
+        <br />
+      </section>
+      <section id="cont3" class="cont-3">
+        <h2>FORMACION ACADEMICA</h2>
+        <ul>
+          <li>&#8227;Secundario completo em Liceo Informatico II</li>
+          <li>
+            &#8227;Graduado en la carrera de Ingenieria en Sistemas de la UAI
+          </li>
+          <li>
+            &#8227;Maestría en Ingeniería de Sistemas de Control en la
+            Universita Degli Studi di Padova
+          </li>
+        </ul>
+      </section>
+      <footer class="pie">
+        <p>&#174; Proyecto final primer curso <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank">Argentina Programa 4.0</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

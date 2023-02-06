@@ -1,2 +1,4 @@
-# argentina-programa-proyecto
-Proyecto final del primer curso
+# DesarrolloWeb-Maximiliano-Vidal-Argentina-Programa
+Trabajo final del curso "Introduccion al desarrollo frontend"
+
+Maximiliano Martin Vidal.
